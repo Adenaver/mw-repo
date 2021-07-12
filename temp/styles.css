@@ -1,0 +1,175 @@
+body, input, ul {
+    margin: 0;
+    padding: 0;
+}
+p, a, label, span {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.popup.login {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup.login .popup__background {
+    background-color: #000;
+    opacity: .5;
+    width: 100%;
+    height: inherit;
+}
+.popup.login .popup__wrapper {
+    position: absolute;
+    border: 2px solid #000;
+    padding: 50px;
+    background-color: #fff;
+}
+.popup.login .popup__wrapper .popup__title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.popup.login .popup__wrapper .form__field {
+    margin-bottom: 20px;
+}
+.popup.login .popup__wrapper .popup__remember {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.popup.login .popup__wrapper .popup__remember input {
+    margin-right: 5px;
+}
+.popup.login .popup__wrapper .popup__remember label {
+    user-select: none;
+    font-size: 13px;
+}
+.popup.login .popup__wrapper .popup__remind {
+    display: block;
+    font-size: 12px;
+    color: #545454;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+.popup.login .popup__wrapper button {
+    display: block;
+    width: 100%;
+    background-color: #000;
+    border: 0;
+    padding: 15px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.popup.login .popup__wrapper .popup__social-auth p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+.popup.login .popup__wrapper .popup__social-auth ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+.popup.login .popup__wrapper .popup__social-auth ul li svg {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.form__field input {
+    width: 200px;
+    background: none;
+    border: 2px solid #c1c1c1;
+    padding: 8px 8px;
+    outline: none;
+}
+.form__field input::placeholder {
+    color: #000;
+}
+/* Selector */
+.multiselect {
+    width: 200px;
+}
+
+.selectBox {
+    position: relative;
+}
+
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+
+.overSelect {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+
+#checkboxes label {
+    display: block;
+}
+
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+/* Tabs */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
